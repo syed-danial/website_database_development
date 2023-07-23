@@ -1,0 +1,64 @@
+<HTML>
+    <title>
+        STUDENT ACCOMPANYING FORM
+    </title>
+    <style>
+        input[type=text], input[type=submit] 
+        {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: none;
+        }
+    </style>
+    <body style="background-color: moccasin;">
+        <h3 style="text-align: center;">
+            STUDENT ACCOMPANYING FORM
+        </h3>
+        <p><b>
+            Student Information:
+        </b></p>
+        <form action="./guardianAccompanying.php" method="post">
+            <table>
+                <tr>
+                    <td>
+                        Student Name: <input type="text" name="studentName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Student ID: <input type="text" name="studentID">
+                    </td>
+                </tr>
+            </table>
+            <p><b>Guardian Accompanying Student:</b></p>
+            <table>
+                <tr>
+                    <td>
+                        Guardian CNIC: <input type="text" name="guardianCNIC">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Name: <input type="text" name="guardianName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Pregnant: <input type="text" name="pregnant">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Reason for parents' absence: <input type="text" name="reason" style="height: 100px; width: 300px;">
+                    </td>
+                </tr>
+            </table>
+            <input type="submit">
+        </form>
+    </body>
+</HTML>

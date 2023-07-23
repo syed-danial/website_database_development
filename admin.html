@@ -1,0 +1,66 @@
+<html>
+    <title>
+        Admin Page
+    </title>
+    <style>
+        input[type=text], select 
+        {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            position: relative;
+            left: 500px;
+        }
+        input[type=submit] 
+        {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            left: 500px;
+        }
+        input[type=submit]:hover 
+        {
+            background-color: #45a049;
+        }
+    </style>
+    <?php ?>
+     <body style="background-color:moccasin; background-image: url(https://hope-ngo.com/wp-content/uploads/2020/03/hope-northen-school.jpg);background-repeat: no-repeat ;background-size: 35% 100%;">
+        <h3 style="position: relative; left: 500px;"> Humarey Bhachey <br> Admin Login Page</h3>
+            <div>   
+                <form action = "admin.php" method="post">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="email" style="position: relative; left: 500px;">Email</label>
+                                <input type="text" name="email" id="email"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="passcode" style="position: relative; left: 500px;">Password</label>
+                                <input type="text" name="passcode" id="passcode">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit"> Submit 
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div> 
+    </body>
+</html>
+
+
+</html>

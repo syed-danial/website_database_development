@@ -1,0 +1,127 @@
+<html>
+    <title>
+        Student Admission Form
+    </title>
+    <style>
+        input[type=text], input[type=number], input[type=date], input[type=submit] 
+        {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: none;
+        }
+    </style>
+    <body style="background-color: gray;">
+        <h2 style="text-align: center;">HUMAREY BHACHEY<br>STUDENT ADMISSION FORM</h2>
+        <p><b>Student Information:</b></p>
+        <form action="admissionForm.php" method="post">
+            <table>
+                <tr>
+                    <td>
+                        Student Name: <input type="text" name="studentName" id="firstName">
+                    </td>
+                    <td style="position: relative; left:150px;">
+                        <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none; border: black;"></p>
+                        <p style="background-color: rgb(148, 142, 142); display: inline-block;"><b><label for="file" style="cursor: pointer;">Upload Image</label></b></p>
+                        <p><img id="output" width="200" /></p>
+                        <script>
+                            var loadFile = function(event) 
+                            {
+	                            var image = document.getElementById('output');
+	                            image.src = URL.createObjectURL(event.target.files[0]);
+                            };
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Date of Birth: <input type="date" name="dateofBirth" id="dateofBirth">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender: <input type="text" name="studentGender" id="studentGender">
+                    </td>
+            </table>
+            <p><b>Parents Information:</b></p>
+            <table>
+                <tr>
+                    <td>
+                        Father Name: <input type="text" name="fatherName" id="fatherName">
+                    </td>
+                    <td>
+                        Mother Name: <input type="text" name="motherName" id="motherName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Father CNIC: <input type="text" name="fatherCNIC" id="fatherCNIC">
+                    </td>
+                    <td>
+                        Mother CNIC: <input type="text" name="motherCNIC" id="motherCNIC">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Father Email: <input type="text" name="fatherEmail" id="fatherEmaill">
+                    </td>
+                    <td>
+                        Mother Email: <input type="text" name="motherEmail" id="motherEmail">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Father Contact: <input type="text" name="fatherContact" id="fatherContact">
+                    </td>
+                    <td>
+                        Mother Contact: <input type="text" name="motherContact" id="motherContact">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Address: <input type="text" name="address" id="address">
+                    </td>
+                </tr>
+            </table>
+            <p><b>Guardian Information:</b></p>
+            <table>
+                <tr>
+                    <td>
+                        Guardian Name: <input type="text" name="GuardianName" id="guardianName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Guardian CNIC: <input type="text"  name="GuardianCNIC" id="guardianCNIC">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender: <input type="text" name="guardianGender" id="guardianGender">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Guardian Contact: <input type="text" name="guardianContact" id="guardianContact">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Guardian Relation: <input type="text" name="relation" id="relation">
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>
+                        Date Added: <input type="date" name="dateAdded" id="dateAdded">
+                    </td>
+                </tr>
+            </table>
+            <input type="submit">
+        </form>
+    </body>
+</html>

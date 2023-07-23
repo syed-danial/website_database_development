@@ -1,0 +1,55 @@
+<html>
+    <title>
+        Class Change
+    </title>
+    <style>
+        div.relative
+        {
+            position: relative;
+            left: 500px;
+        }
+        input[type=text], input[type=submit] 
+        {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: none;
+        }
+    </style>
+    <body style="background-color:moccasin; background-image: url(https://hope-ngo.com/wp-content/uploads/2020/03/hope-northen-school.jpg);background-repeat: no-repeat ;background-size: 35% 100%;">
+        <div class="relative">
+            <h3>
+                CLASS CHANGING FORM
+            </h3>
+            <form action="./classChange.php" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            Student ID <input type="text" name="studentID">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Current Class <input type="text" name="currentClass">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            New Class <input type="text" name="newClass">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Date <input type="date" name="dateAdded">
+                        </td>
+                    </tr>
+                </table> 
+                <input type="submit"  style=" width: 250px;">   
+            </form>
+        </div>
+    </body>
+</html>
